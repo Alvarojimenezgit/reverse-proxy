@@ -10,6 +10,8 @@ services:
       PASSWORD: bolson
     volumes:
       - /srv/dav:/var/lib/dav
+    depends_on:
+        - proxy
   proxy:
       image: nginx
       ports:
