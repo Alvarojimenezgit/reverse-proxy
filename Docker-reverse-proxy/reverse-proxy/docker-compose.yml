@@ -13,6 +13,7 @@ services:
     depends_on:
         - proxy
   proxy:
+      hostname: proxy
       image: nginx
       ports:
         - '80:80'
